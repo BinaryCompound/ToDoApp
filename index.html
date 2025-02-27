@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+
+    <div class="splashScreen splash_active">
+        <img src="./pictures/check_mark.svg" alt="Логотип приложения" width="95.03px" height="80.46px">
+        <p class="splachScreen_title">UpTodo</p>
+    </div>
+
+    <div class="show_content">
+        <header class="header_pannel">
+            <button><img src="./pictures/sort.svg" alt=""></button>
+            <p class="header_title">Index</p>
+            <img src="./pictures/check_mark.svg" alt="Логотип приложения" width="42px" height="42px">
+        </header>
+        <div class="app_content">
+            <p>What do you want to do today?</p>
+            <p>Tap + to add your tasks</p>
+        </div>
+        <nav class="navigation_panel">
+            <button class="index">
+                <img src="./pictures/navigation_panel/index.svg" alt="">
+            </button>
+            <button class="calendar">
+                <img src="./pictures/navigation_panel/calendar.svg" alt="">
+            </button>
+            <button class="add">
+                <img src="./pictures/navigation_panel/add.svg" alt="">
+            </button>
+            <button class="focus">
+                <img src="./pictures/navigation_panel/clock.svg" alt="">
+            </button>
+            <button class="profile">
+                <img src="./pictures/navigation_panel/user.svg" alt="">
+            </button>
+        </nav>
+    </div>
+    <!--
+    <form action="" class="form form-active">
+        <div class="inputAndButton">
+            <input type="text" class="taskInput" id="taskName" name="taskName" placeholder="Введите дело" value="" />
+            <button class="buttonSaveTask" type="submit">Добавить</button>
+        </div>
+    </form>
+
+    <div class="tasks"></div> 
+    -->
+
+    <script src="./scripts/splashScreen.js"></script>
+    <script src="./scripts/showContent.js"></script>
+</body>
+
+</html>
