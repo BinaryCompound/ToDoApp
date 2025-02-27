@@ -44,11 +44,19 @@ button {
     color: black;
     background-color: transparent;
     padding: 2px 5px;
-    transition: 0.5s;
+    transition: 0.1s;
 }
 
-button:hover {
-    background-color: black;
+@media(hover: hover) {
+    button:hover {
+        background-color: black;
+    }
+}
+
+@media (hover: none) {
+    button:active {
+        background-color: black;
+    }
 }
 
 .splachScreen_title {
