@@ -25,40 +25,67 @@
             <img src="./pictures/check_mark.svg" alt="Логотип приложения" width="42px" height="42px">
         </header>
         <div class="app_content">
-            <p>What do you want to do today?</p>
-            <p>Tap + to add your tasks</p>
+            <div class="description">
+                <img src="./pictures/plan.svg" alt="">
+                <p>What do you want to do today?</p>
+                <p>Tap + to add your tasks</p>
+            </div>
+            <!--
+            <form action="" class="form">
+                <div class="inputAndButton">
+                    <input type="text" class="taskInput" id="taskName" name="taskName" placeholder="Введите дело"
+                        value="" />
+                    <button class="buttonSaveTask" type="submit">Добавить</button>
+                </div>
+            </form>
+            <div class="tasks"></div>
+            -->
         </div>
+
+        <dialog class="popup">
+            <div class="popup_header_button">
+                <h2>Add task</h2>
+                <button class="closeDialogBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
+                        <path fill="#fff"
+                            d="m3.5 2.086 4.5 4.5 4.5-4.5L13.914 3.5 9.414 8l4.5 4.5-1.414 1.414-4.5-4.5-4.5 4.5L2.086 12.5l4.5-4.5-4.5-4.5z" />
+                    </svg>
+                </button>
+            </div>
+            <input type="text" placeholder="task" value="" id="popup_input">
+            <input type="text" placeholder="Description" value="" id="popup_input">
+        </dialog>
+
         <nav class="navigation_panel">
-            <button class="index">
+            <button class="index_button nav_button" id="index_button">
                 <img src="./pictures/navigation_panel/index.svg" alt="">
+                index
             </button>
-            <button class="calendar">
+            <button class="calendar_button nav_button" id="calendar_button">
                 <img src="./pictures/navigation_panel/calendar.svg" alt="">
+                Calendar
             </button>
-            <button class="add">
+            <button class="dialogOpen nav_button" id="dialogOpen">
                 <img src="./pictures/navigation_panel/add.svg" alt="">
             </button>
-            <button class="focus">
+            <button class="focus_button nav_button" id="focus_button">
                 <img src="./pictures/navigation_panel/clock.svg" alt="">
+                Focuse
             </button>
-            <button class="profile">
+            <button class="profile_button nav_button" id="profile_button">
                 <img src="./pictures/navigation_panel/user.svg" alt="">
+                Profile
             </button>
         </nav>
     </div>
+
+    <script src="./src/scripts/splashScreen.js"></script>
     <!--
-    <form action="" class="form form-active">
-        <div class="inputAndButton">
-            <input type="text" class="taskInput" id="taskName" name="taskName" placeholder="Введите дело" value="" />
-            <button class="buttonSaveTask" type="submit">Добавить</button>
-        </div>
-    </form>
-
-    <div class="tasks"></div> 
+        <script src="./scripts/addTask.js"></script>
     -->
+    <script src="./src/scripts/showContent.js"></script>
 
-    <script src="./scripts/splashScreen.js"></script>
-    <script src="./scripts/showContent.js"></script>
+    <script src="./index.js" type="module"></script>
 </body>
 
 </html>

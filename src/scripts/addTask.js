@@ -3,9 +3,19 @@
 const input = document.querySelector('.taskInput'); // Поле ввода
 const buttonSaveTask = document.querySelector('.buttonSaveTask'); // Кнопка добавления задачи
 const box = document.querySelector('.tasks'); // Место для задачи
+const form = document.querySelector('.form'); // форма добавления задачи
+const descriptionText = document.querySelector('.description');
 
 // Загружаем задачи из localStorage
 let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+
+function callForm() {
+    buttonAddTask.addEventListener('click', () => {
+        console.log('клик');
+        form.classList.add('form_active');
+        descriptionText.classList.add('descriptionOff');
+    });
+}
 
 // Функция отрисовки задачи
 function renderTask(value) {
@@ -43,6 +53,6 @@ function addTask() {
     });
 }
 
-// Отрисовываем задачи из localStorage при загрузке страницы
-//tasks.forEach(renderTask);
-//addTask();
+tasks.forEach(renderTask);
+addTask();
+callForm();
