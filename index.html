@@ -7,8 +7,8 @@
     <title>ToDo</title>
     <link type="image/x-icon" href="/pictures/favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="/pictures/favicon.ico" rel="icon">
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/style.css">
 </head>
 
 <body>
@@ -30,16 +30,8 @@
                 <p>What do you want to do today?</p>
                 <p>Tap + to add your tasks</p>
             </div>
-            <!--
-            <form action="" class="form">
-                <div class="inputAndButton">
-                    <input type="text" class="taskInput" id="taskName" name="taskName" placeholder="Введите дело"
-                        value="" />
-                    <button class="buttonSaveTask" type="submit">Добавить</button>
-                </div>
-            </form>
-            <div class="tasks"></div>
-            -->
+
+            <ul id="td_list"></ul>
         </div>
 
         <dialog class="popup">
@@ -52,8 +44,11 @@
                     </svg>
                 </button>
             </div>
-            <input type="text" placeholder="task" value="" id="popup_input">
-            <input type="text" placeholder="Description" value="" id="popup_input">
+            <input type="text" placeholder="task name" value="" id="popup_task_name">
+            <input type="text" placeholder="Description" value="" id="popup_text">
+            <button id="send_button">
+                <img src="./pictures/popup/send.svg" alt="">
+            </button>
         </dialog>
 
         <nav class="navigation_panel">
@@ -78,12 +73,6 @@
             </button>
         </nav>
     </div>
-
-    <script src="./src/scripts/splashScreen.js"></script>
-    <!--
-        <script src="./scripts/addTask.js"></script>
-    -->
-    <script src="./src/scripts/showContent.js"></script>
 
     <script src="./index.js" type="module"></script>
 </body>

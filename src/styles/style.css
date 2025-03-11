@@ -18,44 +18,8 @@ input {
 }
 
 input:focus {
-    outline: 1px solid rgb(151, 151, 151);;
+    outline: 1px solid rgb(151, 151, 151);
     border-radius: 4px;
-}
-
-.form {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.form_active {
-    display: flex;
-}
-
-.label {
-    font-size: 40px;
-    font-family: cursive;
-    text-transform: uppercase;
-}
-
-.inputAndButton {
-    display: flex;
-    gap: 15px;
-}
-
-.tasks {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.task {
-    display: flex;
-    width: 100%;
-    gap: 10px;
-    justify-content: space-between;
 }
 
 .nav_button {

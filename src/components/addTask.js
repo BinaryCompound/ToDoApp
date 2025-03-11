@@ -11,7 +11,6 @@ let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 function callForm() {
     buttonAddTask.addEventListener('click', () => {
-        console.log('клик');
         form.classList.add('form_active');
         descriptionText.classList.add('descriptionOff');
     });
