@@ -173,3 +173,7 @@ dialog {
     width: 100%;
     align-items: center;
   }
+
+  .task_item {
+    display: flex;
+  }

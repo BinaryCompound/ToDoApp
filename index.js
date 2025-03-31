@@ -6,7 +6,7 @@ const taskNameInput = document.querySelector('#popup_task_name');
 const descriptionInput = document.querySelector('#popup_text');
 
 import { popupClose, popupOpen, dialogClose } from "./src/components/modal.js";
-import { addTask, renderTask } from "./src/components/createTask.js";
+import { addTask, renderTask, } from "./src/components/createTask.js";
 
 document.addEventListener('DOMContentLoaded', renderTask);
 
